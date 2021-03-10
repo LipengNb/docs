@@ -6,6 +6,6 @@
 - JavaScript
   - [深拷贝/浅拷贝](/Javascript/deepCopy.md)
   - [函数防抖/节流函数](/Javascript/debounce.md)
-
+  - [栈/队列](/Javascript/structure.md)
 - CSS
   - [布局](/Css/layout.md)
