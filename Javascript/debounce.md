@@ -26,6 +26,9 @@
   }
 const oBox = document.querySelector('#box');
 oBox.addEventListener('mouseover', debounce(handleMouseover, 1000, true))
+function handleMouseover() {
+  console.log('我进来了')
+}
 ```
 ### 函数节流
 > 函数节流的概念：无论事件触发的有多么的频繁 它总会在一个规定的时间里 执行一次
