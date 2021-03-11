@@ -1,6 +1,6 @@
 ### 队列
 > 队列 遵循的原则 是先进先出（FIFO）（将队列想象成排队买票, 先到先服务）
-```
+```Javascript
 class Queue {
   constructor() {
     this.count = 0
@@ -56,7 +56,7 @@ class Queue {
 const queue = new Queue()
 ```
 > 双端队列
-```
+```Javascript
 class Deque {
   constructor() {
     this.count = 0
@@ -124,7 +124,7 @@ const deque = new Deque()
  * 另一端就叫栈底,新元素都靠近栈顶,旧元素都靠近栈底
 1. 用对象的形式存储
 
-```
+```Javascript
 class Stack {
   constructor() {
     this.count = 0
@@ -176,7 +176,7 @@ const stack = new Stack()
 
 2. 用数组的形式存储
 
-```
+```Javascript
 class Stack {
   constructor() {
     this.items = []
@@ -210,7 +210,7 @@ const stack = new Stack()
 ```
 ### 单向链表
 > 链表数据结构 当前的数据存放着指向下一个数据的指针，指针为null就到末尾
-```
+```Javascript
 // 单向数据链表
 
 class LinkedList {

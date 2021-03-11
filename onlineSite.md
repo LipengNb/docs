@@ -1,3 +1,14 @@
+
+> 技术博客
+
+* [掘金](https://juejin.cn/)
+
+* [CSDN](https://www.csdn.net/nav/iot)
+
+* [掘金](https://juejin.cn/)
+
+* [segmentfauly思否](https://segmentfault.com/)
+
 > 资源网站
 
 * [NPM 包管理](https://www.npmjs.com/)

@@ -1,6 +1,6 @@
 ### 深拷贝
 > 递归深拷贝
-```
+```Javascript
 function deepCopy(target) {
   let result;
   if (typeof target === 'object') {
@@ -30,19 +30,19 @@ const copyObj = deepCopy(target)
 
 ```
 > 简单粗暴深拷贝（适合纯JSON数据的拷贝）
-```
+```Javascript
 const copyObj = JSON.parse(JSON.stringify(target))
 
 ```
 
 ### 浅拷贝
 > 通过Object.assign()（只能拷贝一层对象 如果对象内属性还有嵌套对象 修改一个会影响到被拷贝的对象哦~）
-```
+```Javascript
 const copyObj = Object.assign({}, target)
 
 ```
 > 通过遍历进行拷贝
-```
+```Javascript
 function shallowCopy(obj) {
   let result = {}
   if (typeof obj === 'object') {
