@@ -1,5 +1,5 @@
-### 准备工作
-全局安装 [docsify-cli](https://www.npmjs.com/package/docsify-cli) 工具，并创建文档项目目录
+> ### 一个神奇的文档网站生成器
+全局安装 [docsify-cli](https://docsify.js.org/#/zh-cn/) 工具，并创建文档项目目录
 ```
 npm i docsify-cli -g
 mkdir my-docs
