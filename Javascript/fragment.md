@@ -105,3 +105,17 @@ function isAvailableEmail(sEmail) {
     return reg.test(sEmail)
 }
 ```
+
+> #### 8. 获取地址栏参数 并转换成对象（也可以传递url）
+```Javascript
+function getUrlParams(url) {
+  const _url = url || window.localtion.href
+  const _urlParams = _url.match(/([?&])(.+?=[^&]+)/igm);
+  const objParams = _urlParams ? _urlParams.reduce((a, b) => {
+    const value = b.slice(1).split('=');
+    a[value[0]] = value[1]
+    return a
+  }, {}) : {}
+  return objParams
+}
+```
