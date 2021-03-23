@@ -1,10 +1,16 @@
-> #### 1. 输入一个值，返回其数据类型
+> #### 输入一个值，返回其数据类型
 ```Javascript
 function type(para) {
     return Object.prototype.toString.call(para)
 }
 ```
-> #### 2. 数组去重
+> #### 输入一个值，返回其数据类型
+```Javascript
+function isIn(data, prot) {
+    return Object.prototype.hasOwnProperty.call(data, prot)
+}
+```
+> #### 数组去重
 ```Javascript
 function unique1(arr) {
     return [...new Set(arr)]
@@ -20,7 +26,7 @@ function unique2(arr) {
     })
 }
 ```
-> #### 3. 字符串去重
+> #### 字符串去重
 ```Javascript
 String.prototype.unique = function () {
     var obj = {},
@@ -40,7 +46,7 @@ function uniq(str) {
     return str.replace(/(\w)\1+/g, '$1')
 }
 ```
-> #### 4. 找出字符串中第一次只出现一次的字母
+> #### 找出字符串中第一次只出现一次的字母
 ```Javascript
 String.prototype.firstAppear = function () {
     var obj = {},
@@ -59,7 +65,7 @@ String.prototype.firstAppear = function () {
     }
 }
 ```
-> #### 5. 返回当前的时间（年月日时分秒）
+> #### 返回当前的时间（年月日时分秒）
 ```Javascript
 function getDateTime() {
     var date = new Date(),
@@ -83,7 +89,7 @@ function getDateTime() {
     return "" + year + "年" + month + "月" + day + "日" + hour + "时" + minute + "分" + second + "秒"
 }
 ```
-> #### 6. 检验字符串是否是回文
+> #### 检验字符串是否是回文
 ```Javascript
 function isPalina(str) {
     if (Object.prototype.toString.call(str) !== '[object String]') {
@@ -98,7 +104,7 @@ function isPalina(str) {
     return true;
 }
 ```
-> #### 7. 验证邮箱的正则表达式
+> #### 验证邮箱的正则表达式
 ```Javascript
 function isAvailableEmail(sEmail) {
     var reg = /^([\w+\.])+@\w+([.]\w+)+$/
@@ -106,7 +112,7 @@ function isAvailableEmail(sEmail) {
 }
 ```
 
-> #### 8. 获取地址栏参数 并转换成对象（也可以传递url）
+> #### 获取地址栏参数 并转换成对象（也可以传递url）
 ```Javascript
 function getUrlParams(url) {
   const _url = url || window.localtion.href
