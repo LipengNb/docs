@@ -1,17 +1,17 @@
 > #### 输入一个值，返回其数据类型
-```Javascript
+```javascript
 function type(para) {
     return Object.prototype.toString.call(para)
 }
 ```
 > #### 输入一个值，返回其数据类型
-```Javascript
+```javascript
 function isIn(data, prot) {
     return Object.prototype.hasOwnProperty.call(data, prot)
 }
 ```
 > #### 数组去重
-```Javascript
+```javascript
 function unique1(arr) {
     return [...new Set(arr)]
 }
@@ -27,7 +27,7 @@ function unique2(arr) {
 }
 ```
 > #### 字符串去重
-```Javascript
+```javascript
 String.prototype.unique = function () {
     var obj = {},
         str = '',
@@ -47,7 +47,7 @@ function uniq(str) {
 }
 ```
 > #### 找出字符串中第一次只出现一次的字母
-```Javascript
+```javascript
 String.prototype.firstAppear = function () {
     var obj = {},
         len = this.length;
@@ -66,7 +66,7 @@ String.prototype.firstAppear = function () {
 }
 ```
 > #### 返回当前的时间（年月日时分秒）
-```Javascript
+```javascript
 function getDateTime() {
     var date = new Date(),
         year = date.getFullYear(),
@@ -90,7 +90,7 @@ function getDateTime() {
 }
 ```
 > #### 检验字符串是否是回文
-```Javascript
+```javascript
 function isPalina(str) {
     if (Object.prototype.toString.call(str) !== '[object String]') {
         return false;
@@ -105,7 +105,7 @@ function isPalina(str) {
 }
 ```
 > #### 验证邮箱的正则表达式
-```Javascript
+```javascript
 function isAvailableEmail(sEmail) {
     var reg = /^([\w+\.])+@\w+([.]\w+)+$/
     return reg.test(sEmail)
@@ -113,7 +113,7 @@ function isAvailableEmail(sEmail) {
 ```
 
 > #### 获取地址栏参数 并转换成对象（也可以传递url）
-```Javascript
+```javascript
 function getUrlParams(url) {
   const _url = url || window.localtion.href
   const _urlParams = _url.match(/([?&])(.+?=[^&]+)/igm);

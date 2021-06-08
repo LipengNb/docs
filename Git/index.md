@@ -24,6 +24,17 @@ git branch -d <branch>        删除分支
 git branch -D <branch>        强制删除分支(当修改的分支未合并用-d事无法删除的，所以要用到强制删除)
 
 git merge <branch>            将分支的代码合并到当前所在的分支
+git merge <branch> --no-ff    推荐使用这种合并
+
+git log                       查询提交记录
+git log -2                    查看最后的2次提交 数字可以是N
+git log --pretty=oneline      查询提交记录(备注与HEAD在一行显示)
+git log --graph               显示ASCII图形表示的分支合并历史
+
+
+
+
+
 ```
 
 > Git新建忽略文件  目录下建立一个.gitignore文件(可以有多个，影响范围当前文件及子文件)

@@ -5,7 +5,7 @@
 3. 项目根目录创建文件 babel.config.js
 4. babel.config.js 文件内容如下代码
 
-``` Javascript
+``` javascript
   const presets = [
     ["@babel/env", {
       targets: {
@@ -25,7 +25,7 @@
 1. 默认导出 与 默认导入
 * 默认导出的语法 export default 默认导出的成员
 
-``` Javascript
+``` javascript
 
 let a = 10
 let c = 20
@@ -43,7 +43,7 @@ export default {
 ```
 * 默认导入语法 import 接收名称 from '模块标识符'
 
-``` Javascript
+``` javascript
 // 导入模块成员
 import m1 from './m1.js'
 
